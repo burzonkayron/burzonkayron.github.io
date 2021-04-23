@@ -5,72 +5,45 @@
     <title></title>
     <style>
       body{
-        margin=0;
-        padding=0;
+        backgroud:none;
       }
       .container{
+        width:900px;
+        padding:7% 50px;
+        margin:0 auto;
+      }
+      a{
+        width:180px;
+        display:inline-block;
+        margin:5% 20px;
+        padding:20px 0px;
         text-align:center;
-        margin-top:360px;
-      }
-      .btn{
-        border:1px solid #3498db;
-        background:none;
-        padding:10px 20px;
-        font-size:20px;
-        font-family:"montserrat";
-        cursor:pointer;
-        margin=10px;
-        transition:0.8s;
+        font-family:Arial;
+        font-size:16px;
+        font-weight:bold;
+        color:#fff;
         position:relative;
-        overflow:hidden;
+        text-decoration:none;
+        letter-spacing:1.5px;
       }
-      .btn1,.btn2{
-        color=#3498db;
+      a:nth-child(1){
+        background:red;
       }
-      .btn3{
-        color:#fff;
+      a:nth-child(2){
+        background:orange;
+        border-radius:10px;
       }
-      .btn1:hover,.btn2:hover{
-        color:#fff;
-      }
-      .btn3:hover{
-        color:#3498db;
-      }
-      .btn::before{
-        content:"";
-        position:absolute;
-        left:0;
-        width:100%;
-        height:0%;
-        background:#3498db;
-        z-index:-1;
-        transition:0.8s;
-      }
-      .btn1::before, .btn3::before{
-        top:0;
-        border-radius:0 0 50% 50%;
-      }
-      .btn2::before{
-        bottom:0;
-        border-radius:50% 50% 0 0;
-      }
-      .btn3::before{
-        height:180%;
-      }
-      .btn1:hover::before, .btn2:hover::before{
-        height:180%;
-      }
-      .btn3:hover::before{
-        height:0%;
+      a:nth-child(2){
+        background:purple;
+        border:2px solod #fff;
       }
     </style>
-    <link rel="stylesheet" hred="style.css">
   </head>
   <body>
     <div class="container">
-      <button class="btn btn1">Button 1</button>
-      <button class="btn btn2">Button 2</button>
-      <button class="btn btn3">Button 3</button>
+      <a href ="#"> Button 1 </a>
+      <a href ="#"> Button 2 </a>
+      <a href ="#"> Button 3 </a>
     </div>
   </body>
 </html>
