@@ -20,8 +20,8 @@
         color:#fff;
         margin:10px;
         position:relative;
-        cursor:pointer;
         transition:0.8s;
+        overflow:hidden;
       }
       a:nth-child(1){
         border-radius:30px;
@@ -48,7 +48,6 @@
         font-family:montserrat;
         transition:0.8s;
         position:relative;
-        overflow:hidden;
       }
       a:nth-child(2){
         color:#3498db;
@@ -65,7 +64,9 @@
         background:#3498db;
         z-index:-1;
         transition:0.8s;
-        bottom:0;
+      }
+      a:nth-child(2)::before{
+        top:0;
         border-radius:0 0 50% 50%;
       }
       a:nth-child(2):hover::before{
