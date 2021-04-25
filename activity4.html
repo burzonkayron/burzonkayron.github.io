@@ -4,7 +4,7 @@
     <title>Buttons</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-      .btn{
+      .btn.a{
         width:100px;
         height:50px;
         border-radius:30px;
@@ -16,7 +16,7 @@
         border:2px solid #A2D9CE;
         transition:background-color 1s;
       }
-      .btn:hover{
+      .btn.a:hover{
         background-color: #A2D9CE;
       }
       .btn.b{
@@ -36,7 +36,7 @@
       .btn.b:hover{
         color:#fff;
       }
-      .btn.::before{
+      .btn.b::before{
         content:"";
         position:absolute;
         left:0;
@@ -46,11 +46,11 @@
         z-index:-1;
         transition:0.8s;
       }
-      .btn.a::before{
+      .btn.b::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .btn.a:hover::before{
+      .btn.b:hover::before{
         height:180%;
     </style>
   </head>
