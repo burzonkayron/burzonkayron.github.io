@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Buttons</title>
     <style>
       body{
         margin:0;
@@ -20,8 +20,6 @@
         color:#fff;
         margin:10px;
         position:relative;
-        transition:0.8s;
-        overflow:hidden;
       }
       a:nth-child(1){
         border-radius:30px;
@@ -41,21 +39,25 @@
         border-radius:20px;
         background:yellow;
         }
-      a:nth-child(2){
+      .btn{
         border:1px solid #3498db;
         background:none;
+        padding:10px 20px;
         font-size:20px;
-        font-family:montserrat;
+        font-family:metserrat;
+        cursor:pointer;
+        margin:10px;
         transition:0.8s;
         position:relative;
+        overflow:hidden;
       }
-      a:nth-child(2){
+      .btn2{
         color:#3498db;
       }
-      a:nth-child(2):hover{
+      .btn2:hover{
         color:#fff;
       }
-      a:nth-child(2)::before{
+      .btn2::before{
         content:"";
         position:absolute;
         left:0;
@@ -65,11 +67,11 @@
         z-index:-1;
         transition:0.8s;
       }
-      a:nth-child(2)::before{
+      .btn2::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      a:nth-child(2):hover::before{
+      .btn2:hover::before{
         height:180%;
       }
       a:nth-child(3){
@@ -81,7 +83,7 @@
   <body>
     <div class="container">
       <a href ="#"> Button 1 </a>
-      <a href ="#"> Button 2 </a>
+      <button class="btn btn2"></button>
       <a href ="#"> Button 3 </a>
     </div>
   </body>
