@@ -24,11 +24,17 @@
         position:relative;
         overflow:hidden;
       }
-      .b2{
+      .b1,.b2{
         color:#3498db;
       }
-      .b2:hover{
+      .b3,.b4{
         color:#fff;
+      }
+      .b1:hover,.b2:hover{
+        color:#fff;
+      }
+      .b3:hover,.b4:hover{
+        color:#3498db;
       }
       .btn::before{
         content:"";
@@ -40,12 +46,22 @@
         z-index:-1;
         transition:0.8s;
       }
-      .b2::before{
+      .b1::before,.b3::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .b2:hover::before{
+      .b2::before,.b4::before{
+        bottom:0;
+        border-radius:50% 50% 0 0;
+      }
+      .b3::before,.b4::before{
+        height:180%;
+      }
+      .b1:hover::before,.b2:hover::before{
         heigth:180%;
+      }
+      .b3:hover::before,.b4:hover::before{
+        heigth:0%;
       }
     </style>
   </head>
@@ -54,6 +70,7 @@
       <button class="btn b1">Button 1</button>
       <button class="btn b2">Button 2</button>
       <button class="btn b3">Button 3</button>
+      <button class="btn b4">Button 4</button>
     </div>
   </body>
 </html>
