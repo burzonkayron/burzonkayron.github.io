@@ -13,7 +13,7 @@
         text-align:center;
         margin-top:360px;
       }
-      .btn{
+      .btn.a{
         width:100px;
         height:20px;
         background:#6a89cc;
@@ -28,16 +28,16 @@
         transform-style:preserve-3d;
         perspective:800px;
       }
-      .btn::after{
+      .btn.a::after{
         content:"";
         position:absolute;
         background:#4a69bd;
         transition:0.4s;
       }
-      .btn1:hover{
+      .btn.a:hover{
         transform:rotateY(20deg);
       }
-      .btn1:after{
+      .btn.a:after{
         width:30px;
         height:100%;
         top:0;
@@ -45,10 +45,31 @@
         transform-origin:100% 0;
         transform:rotateY(-90deg)
       }
-      .btn3:hover{
+      .btn.c{
+        width:100px;
+        height:20px;
+        background:#6a89cc;
+        margin:40px;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        color:#fff;
+        font-family:"montserrat";
+        font-size:20px;
+        transition:0.4s;
+        transform-style:preserve-3d;
+        perspective:800px;
+      }
+      .btn.c::after{
+        content:"";
+        position:absolute;
+        background:#4a69bd;
+        transition:0.4s;
+      }
+      .btn.c:hover{
         transform:rotateY(-20deg);
       }
-      .btn3:after{
+      .btn.c:after{
         width:30px;
         height:100%;
         top:0;
@@ -95,9 +116,9 @@
   </head>
   <body>
     <div class="container">
-      <button class="btn btn1">Button 1</button>
+      <button class="btn a">Button 1</button>
       <button class="btn b">Button 2</button>
-      <button class="btn btn3">Button 3</button>
+      <button class="btn c">Button 3</button>
     </div>
   </body>
 </html>
