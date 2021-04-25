@@ -81,7 +81,7 @@
         transition:1s;
         transition-delay:0.75s;
       }
-      .btn1{
+      .btn.1{
         width:150px;
         height:50px;
         border-radius:30px;
@@ -89,10 +89,10 @@
         border:2px solid #A2D9CE;
         transition:background-color 1s;
       }
-      .btn1:hover{
+      .btn.1:hover{
         background-color: #A2D9CE;
       }
-      .btn2{
+      .btn.2{
         border:1px solid #3498db;
         background:none;
         padding:10px 20px;
@@ -106,10 +106,10 @@
         overflow:hidden;
         color:#3498db;
       }
-      .btn2:hover{
+      .btn.2:hover{
         color:#fff;
       }
-      .btn::before{
+      .btn.2::before{
         content:"";
         position:absolute;
         left:0;
@@ -119,18 +119,18 @@
         z-index:-1;
         transition:0.8s;
       }
-      .btn2::before{
+      .btn.2::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .btn2:hover::before{
+      .btn.2:hover::before{
         height:180%;
     </style>
   </head>
   <body>
     <div class="container">
-      <button class="btn1">Button 1</button>
-      <button class="btn2">Button 2</button>
+      <button class="btn 1">Button 1</button>
+      <button class="btn 2">Button 2</button>
           <a href="#">
         <span></span>
         <span></span>
