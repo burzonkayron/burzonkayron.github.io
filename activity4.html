@@ -25,16 +25,16 @@
         position:relative;
         overflow:hidden;
       }
-      .b1,.b2{
+      .btn1,.btn2{
         color:#3498db;
       }
-      .b3,.b4{
+      .btn3,.btn4{
         color:#fff;
       }
-      .b1:hover,.b2:hover{
+      .btn1:hover,.btn2:hover{
         color:#fff;
       }
-      .b3:hover,.b4:hover{
+      .btn3:hover,.btn4:hover{
         color:#3498db;
       }
       .btn::before{
@@ -47,31 +47,31 @@
         z-index:-1;
         transition:0.8s;
       }
-      .b1::before,.b3::before{
+      .btn1::before,.btn3::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .b2::before,.b4::before{
+      .btn2::before,.btn4::before{
         bottom:0;
         border-radius:50% 50% 0 0;
       }
-      .b3::before,.b4::before{
+      .btn3::before,.btn4::before{
         height:180%;
       }
-      .b1:hover::before,.b2:hover::before{
+      .btn1:hover::before,.btn2:hover::before{
         heigth:180%;
       }
-      .b3:hover::before,.b4:hover::before{
+      .btn3:hover::before,.btn4:hover::before{
         heigth:0%;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <button class="btn b1">Button 1</button>
-      <button class="btn b2">Button 2</button>
-      <button class="btn b3">Button 3</button>
-      <button class="btn b4">Button 4</button>
+      <button class="btn btn1">Button 1</button>
+      <button class="btn btn2">Button 2</button>
+      <button class="btn btn3">Button 3</button>
+      <button class="btn btn4">Button 4</button>
     </div>
   </body>
 </html>
