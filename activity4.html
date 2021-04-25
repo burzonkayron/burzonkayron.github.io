@@ -13,7 +13,38 @@
         text-align:center;
         margin-top:360px;
       }
-      .btn{
+      .btn.a{
+        width:220px;
+        height:20px;
+        background:#6a89cc;
+        margin:40px;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        color:#fff;
+        font-family:"montserrat";
+        font-size:20px;
+        transition:0.4s;
+        transform-style:preserve-3d;
+        perspective:800px;
+      }
+      .btn.a::after{
+        content:"";
+        position:absolute;
+        background:#4a69bd;
+        transition:0.4s;
+      }
+      .btn.a:hover{
+        transform:rotateX(-20deg);
+      }
+      .btn.a:after{
+        width:100%;
+        height:24px;
+        top:-24px;
+        left:0;
+        transform-origin:0 100%;
+      }
+      .btn.b{
         border:1px solid #3498db;
         background:none;
         padding:10px 20px;
@@ -25,19 +56,13 @@
         position:relative;
         overflow:hidden;
       }
-      .btn1,.btn2{
+      .btn.b{
         color:#3498db;
       }
-      .btn3,.btn4{
+      .btn.b:hover{
         color:#fff;
       }
-      .btn1:hover,.btn2:hover{
-        color:#fff;
-      }
-      .btn3:hover,.btn4:hover{
-        color:#3498db;
-      }
-      .btn::before{
+      .btn.b::before{
         content:"";
         position:absolute;
         left:0;
@@ -47,31 +72,20 @@
         z-index:-1;
         transition:0.8s;
       }
-      .btn1::before,.btn3::before{
+      .btn.b::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .btn2::before,.btn4::before{
-        bottom:0;
-        border-radius:50% 50% 0 0;
-      }
-      .btn3::before,.btn4::before{
+      .btn.b:hover::before{
         height:180%;
-      }
-      .btn1:hover::before,.btn2:hover::before{
-        height:180%;
-      }
-      .btn3:hover::before,.btn4:hover::before{
-        height:0%;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <button class="btn btn1">Button 1</button>
-      <button class="btn btn2">Button 2</button>
-      <button class="btn btn3">Button 3</button>
-      <button class="btn btn4">Button 4</button>
+      <button class="btn a">Button 1</button>
+      <button class="btn b">Button 2</button>
+      <button class="btn c">Button 3</button>
     </div>
   </body>
 </html>
