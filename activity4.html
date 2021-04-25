@@ -36,7 +36,7 @@
         position:absolute;
         left:10px;
         top:10px;
-        border-radius:10px;
+        border-radius:20px;
         background:yellow;
         }
       .btn{
@@ -51,13 +51,19 @@
         position:relative;
         overflow:hidden;
       }
-      .btn2{
+      .btn1,.btn2{
         color:#3498db;
       }
-      .btn2:hover{
+      .btn3,.btn4{
         color:#fff;
       }
-      .btn2::before{
+      .btn1:hover,.btn2:hover{
+        color:#fff;
+      }
+      .btn3:hover,.btn4:hover{
+        color:#3498db;
+      }
+      .btn::before{
         content:"";
         position:absolute;
         left:0;
@@ -67,12 +73,22 @@
         z-index:-1;
         transition:0.8s;
       }
-      .btn2::before{
+      .btn1::before,.btn3::before{
         top:0;
         border-radius:0 0 50% 50%;
       }
-      .btn2:hover::before{
+      .btn2::before,.btn4::before{
+        top:0;
+        border-radius:50% 50% 0 0;
+      }
+      .btn3::before,.btn4::before{
         height:180%;
+      }
+      .btn1:hover::before,.btn2:hover::before{
+        height:180%;
+      }
+      .btn3:hover::before,.btn4:hover::before{
+        height:0%;
       }
       a:nth-child(3){
         background:purple;
@@ -83,7 +99,10 @@
   <body>
     <div class="container">
       <a href ="#"> Button 1 </a>
+      <button class="btn btn2">Button 1</button>
       <button class="btn btn2">Button 2</button>
+      <button class="btn btn2">Button 3</button>
+      <button class="btn btn2">Button 4</button>
       <a href ="#"> Button 3 </a>
     </div>
   </body>
