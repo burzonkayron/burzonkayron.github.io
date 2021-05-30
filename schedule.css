@@ -1,0 +1,9 @@
+table th {
+  text-align: left;
+  background-color: #3a6070;
+  color: #FFF;
+}
+table td {
+  border: 1px solid #e3e3e3;
+  padding: 4px 8px;
+}
