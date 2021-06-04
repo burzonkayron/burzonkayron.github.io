@@ -7,6 +7,9 @@ th {
   background-color: white;
   font-style: arial;
 }
+tr {
+  text-align: center;
+}
 table, th, td {
   cellspacing:"0"
   border: 1px solid black
