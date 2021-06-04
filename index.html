@@ -11,7 +11,42 @@
       height:150px;
       width:180px;
       float:left;
-    
+    }
+    .btn{
+        border:1px solid #3498db;
+        background:none;
+        padding:10px 20px;
+        font-size:20px;
+        font-family:"montserrat";
+        cursor:pointer;
+        margin:10px;
+        transition:0.8s;
+        position:relative;
+        overflow:hidden;
+      }
+      .btn{
+        color:#3498db;
+      }
+      .btn:hover{
+        color:#fff;
+      }
+      .btn::before{
+        content:"";
+        position:absolute;
+        left:0;
+        width:100%;
+        height:0%;
+        background:#3498db;
+        z-index:-1;
+        transition:0.8s;
+      }
+      .btn::before{
+        top:0;
+        border-radius:0 0 50% 50%;
+      }
+      .btn:hover::before{
+        height:180%;
+      }
   </style>
 </head>
 </body>
@@ -34,6 +69,12 @@
   </form>
 </div>
 </body>
-Click Here: <a href="page1.html">page1</a>
-<a href="activity4.html">activity4</a>
-<a href="activity5.html">activity5</a>
+Click Here: <a href="page1.html">
+  <button class="btn">Page 1</button>
+</a>
+<a href="activity4.html">
+  <button class="btn">Activity 4</button>
+</a>
+<a href="activity5.html">
+  <button class="btn">Activity5</button>
+</a>
