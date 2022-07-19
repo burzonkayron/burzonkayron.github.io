@@ -15,11 +15,16 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+.sep-calendar{
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2) -3px 3px 10px 0 #fff;
+    padding: 10px;
 }
 .sep-calendar h1{
   text-align: center;
 }
-.sep-calendar ul{
+.sep-calendar dev{
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   list-style: none;
