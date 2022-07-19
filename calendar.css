@@ -80,6 +80,11 @@ li:nth-child(7n - 1){
     background-color: orange;
 }
 
+.none~li{
+    opacity:3 !important;
+    background-color: coral;
+}
+
 .last-day~li{
     opacity: .5 !important;
     font-weigth: 200;
