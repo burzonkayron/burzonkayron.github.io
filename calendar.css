@@ -74,7 +74,6 @@ li:nth-child(7n - 1){
     font-weight: 900;
 }
 
-.b-day,
 .b-day~li{
     background-color: blue;
 }
