@@ -81,7 +81,7 @@ li:nth-child(7n - 1){
 
 .none,
 .none~li{
-    background-color: none;
+    background-color: coral;
 }
 
 .last-day~li{
