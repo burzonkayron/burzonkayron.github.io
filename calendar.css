@@ -1,1 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  text-transform: uppercase;
+  background-color: #e8e8e8;
+}
 
+.calendar {
+  display: flex;
+  margin: 15vh auto;
+  width: 95%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sep-calendar h1{
+  text-align: center;
+}
+.sep-calendar ul{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+}
+
+li{
+  
